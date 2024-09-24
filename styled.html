@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Workation</title>
+   </head>
+
+   <body>
+      <div class="frame">
+         <!-- block #1 -->
+         <div class="block">
+            <h1>
+               <img src="./assets/workcation1.png" class="icon">
+               work<span class="highlight">ation</span>
+            </h1>
+
+            <div class="rounded">
+               <img src="./assets/workcation2.png" class="fullwidth rounded">
+            </div>
+         </div>
+
+         <!-- block #2 -->
+         <div class="block vcenter">
+            <h2 class="title">You can work from anywhere</h2>
+            <h2 class="title highlight">Take advantage of it</h2>
+            <p class="explanation">
+               Workaction helps you find your friendly rentals at beautiful location
+               so you can enjoy some nice weather even when you're not on vacation
+            </p>
+            <div>
+               <button class="btn">Book your escape</button>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+
+<style>
+:root {
+   font-family: Helvetica, sans-serif;
+   --highlight-color: #6E75D0;
+   --backstage-color: #444444;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+}
+
+.frame {
+   background-color: #FAFAFA;
+   max-width: 640px;
+   display: flex;
+   flex-direction: column;
+}
+@media (min-width: 800px) {
+   .frame {
+      flex-direction: row;
+   }
+}
+
+.block {
+   padding: 1rem;
+   width: 100%;
+}
+.icon {
+   max-width: 70px;
+}
+
+.fullwidth {
+   width: 100%;
+}
+.title {
+   margin: 0.5rem 0 0.5rem 0;
+}
+.highlight {
+   color: var(--highlight-color);
+}
+.rounded {
+   border-radius: 5%;
+}
+.explanation {
+   color: var(--backstage-color);
+}
+.vcenter {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.btn {
+  background-color: var(--highlight-color);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 24px;
+  text-align: center;
+  font-size: 16px;
+}
+</style>
